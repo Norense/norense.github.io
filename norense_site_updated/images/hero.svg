@@ -1,0 +1,25 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#060606"/>
+      <stop offset="1" stop-color="#0b0b0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <!-- subtle circuit lines -->
+  <g stroke="#2b2b2b" stroke-width="2" opacity="0.6">
+    <path d="M80 120 h200 v40 h120 v-40 h320" fill="none"/>
+    <path d="M80 240 h320 v40 h80 v-40 h240" fill="none"/>
+    <path d="M200 60 v520" fill="none"/>
+    <path d="M520 60 v520" fill="none"/>
+    <path d="M920 120 h300 v80 h40 v-80 h120" fill="none"/>
+  </g>
+  <!-- glowing red accents -->
+  <g stroke="#e11b24" stroke-width="3" opacity="0.25">
+    <path d="M1200 100 h200 v50" fill="none"/>
+    <circle cx="1240" cy="130" r="6" fill="#e11b24"/>
+    <circle cx="1400" cy="120" r="4" fill="#e11b24"/>
+  </g>
+  <text x="60" y="140" fill="#fff" font-size="36" font-family="Segoe UI, Arial" opacity="0.95">Cyber-Sports · Secure Systems · Fan Data Protection</text>
+</svg>
