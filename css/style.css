@@ -1,0 +1,60 @@
+
+/* style.css - cyber-tech red/black theme, static & clean */
+:root{
+  --bg:#070707;
+  --card:#0f0f10;
+  --accent:#e11b24;
+  --muted:#bdbdbd;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;
+  background:linear-gradient(180deg,#050505 0%, #0b0b0b 100%);
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.container{max-width:980px;margin:32px auto;padding:0 20px;}
+header.site-header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{margin:0;font-size:18px;letter-spacing:0.4px}
+.tag{font-size:13px;color:var(--muted)}
+nav.main-nav a{color:var(--white);text-decoration:none;margin-left:18px;font-weight:600}
+.hero{
+  display:flex;align-items:center;gap:28px;
+  background:linear-gradient(0deg, rgba(225,27,36,0.06), rgba(225,27,36,0.03));
+  padding:36px;border-radius:8px;
+  background-image: url('images/hero.svg');
+  background-size:cover;
+  background-position:center;
+  min-height:240px;
+  color:var(--white);
+}
+.hero .intro{max-width:640px}
+.hero h2{margin:0 0 8px 0;font-size:28px}
+.hero p{margin:0;color:var(--muted)}
+.btn{
+  display:inline-block;padding:10px 16px;border-radius:6px;
+  background:transparent;border:1px solid rgba(225,27,36,0.9);
+  color:var(--white);text-decoration:none;font-weight:700;
+}
+.section{margin-top:28px;background:transparent;padding:18px;border-radius:8px}
+.card{background:var(--card);padding:18px;border-radius:8px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+h3{color:var(--accent);margin-top:0}
+.skill-list{display:flex;flex-wrap:wrap;gap:8px}
+.skill{padding:8px 10px;background:#111;border-radius:6px;font-size:14px;color:var(--muted)}
+footer{margin:36px 0 60px;color:var(--muted);font-size:13px;text-align:center}
+
+/* form */
+.form-row{display:flex;gap:12px;flex-wrap:wrap}
+input[type="text"],input[type="email"],textarea{
+  width:100%;padding:10px;border-radius:6px;border:1px solid #222;background:#0b0b0b;color:var(--white)
+}
+textarea{min-height:120px}
+.small{font-size:13px;color:var(--muted)}
+.resume-link{display:inline-block;margin-top:12px;color:var(--white);text-decoration:none;border-bottom:1px dashed rgba(225,27,36,0.7)}
